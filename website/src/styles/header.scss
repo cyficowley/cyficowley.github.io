@@ -4,7 +4,7 @@
 
     width: 100%;
 
-    .go-UP {
+    .z_high {
         a:hover {
             text-decoration: none;
         }
@@ -160,6 +160,7 @@
                 }
                 &:nth-child(4) {
                     animation-delay: .45s;
+                    box-shadow: 0 5px 5px -5px grey;
                 }
             }
 
