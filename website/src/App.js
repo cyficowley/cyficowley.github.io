@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/header.jsx'
+import Home from './components/home.jsx'
+import Skills from './components/skills.jsx'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      
         <Header/>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Home />
+        <section class="background-image" id="tubing">&nbsp;</section>
+        <Skills/>
+
       </div>
     );
   }

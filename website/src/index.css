@@ -1,5 +1,40 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
+  font-family: 'Fira Sans', serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 84px !important; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Rubik', sans-serif !important; }
+  body #tubing {
+    background-image: url("/images/tubing.jpg"); }
+  body .centered {
+    text-align: center; }
+  body h1 {
+    font-weight: 900;
+    font-size: 56px; }
+  body .background-image {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 400px;
+    margin-top: 0;
+    -webkit-transition: height 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: height 1s; }
+  @media screen and (max-width: 480px) {
+    body h1 {
+      font-size: 42px; } }
+  body .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    cursor: hand; }
+  body .z-high {
+    z-index: 1; }
+    body .z-high a:hover {
+      text-decoration: none; }

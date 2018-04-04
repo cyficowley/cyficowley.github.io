@@ -4,13 +4,6 @@
 
     width: 100%;
 
-    .z_high {
-        a:hover {
-            text-decoration: none;
-        }
-        z-index: 1;
-    }
-
     #main-logo {
         height: 50px;
         vertical-align: middle;
@@ -29,7 +22,7 @@
         animation-timing-function: linear;
     }
 
-    .nav_bar {
+    .nav-bar {
 
         position: fixed;
         top: 0;
@@ -52,7 +45,7 @@
                 text-align: left;
                 padding: 27px 15px;
                 display: block;
-                font-size: 1.5em;
+                font-size: 21px;
                 color: $header-text;
                 background-color: $header;
                 -webkit-transition: background-color .3s ease-out;
@@ -99,6 +92,7 @@
             opacity: 0;
 
             a {
+                text-align: left;
                 font-size: 20px;
                 display: inline-block;
                 padding-top: 7px;
@@ -172,21 +166,13 @@
 
 
 @keyframes fade_in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @keyframes slide_in {
-    0% {
-        padding-left: 75px;
-    }
-    100% {
-        padding-left: 25px;
-    }
+    0% {padding-left: 75px;}
+    100% {padding-left: 25px;}
 }
 
 
@@ -194,37 +180,19 @@
 
 
 @-moz-keyframes spin {
-    0% {
-        -moz-transform: rotate(0deg);
-    }
-    10% {
-        -moz-transform: rotate(360deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-    }
+    0% {-moz-transform: rotate(0deg);}
+    10% {-moz-transform: rotate(360deg);}
+    100% {-moz-transform: rotate(360deg);}
 }
 
 @-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    10% {
-        -webkit-transform: rotate(360deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+    0% {-webkit-transform: rotate(0deg);}
+    10% {-webkit-transform: rotate(360deg);}
+    100% {-webkit-transform: rotate(360deg);}
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
 }
