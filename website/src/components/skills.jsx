@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/skills.css';
 import RainbowButton from './rainbowButton.jsx'
 
 export default class Skills extends React.Component {
@@ -7,14 +6,14 @@ export default class Skills extends React.Component {
     render() {
         return (
             <section id="skills">
-                <div class="container">
-                    <div class="col-xs-12" id="stick-to-top">&nbsp;</div>
-                    <div class="col-md-8 col-md-offset-2 col-xs-12 centered">
+                <div className="container">
+                    <div className="col-xs-12" id="stick-to-top">&nbsp;</div>
+                    <div className="col-md-8 col-md-offset-2 col-xs-12 centered">
                         <h2>My Work Experience</h2>
-                        <hr/>
-                        <div id="Malwarebytes" class="exprience-section">
-                            <img src="/images/Malwarebytes.png"/>
-                            <p class="labeler">Intern in quality assurance over the summer of 2017</p>
+                        <hr />
+                        <div id="Malwarebytes" className="exprience-section">
+                            <img src="/images/Malwarebytes.png" />
+                            <p className="labeler">Intern in quality assurance over the summer of 2017</p>
                             <ul>
                                 <li>Worked in testing internal sales systems using salesforce for 2 months</li>
                                 <li>Was the sole QA person for the <a target="_blank" href="https://www.malwarebytes.com">Malwarebytes website</a> for 2 months
@@ -26,9 +25,9 @@ export default class Skills extends React.Component {
                                 </li>
                             </ul>
                         </div>
-                        <div id="rose" class="exprience-section">
-                            <img src="/images/rosegs.png"/>
-                            <p class="labeler">Developed WordPress site for Rose Garden Software summer of 2016</p>
+                        <div id="rose" className="exprience-section">
+                            <img src="/images/rosegs.png" />
+                            <p className="labeler">Developed WordPress site for Rose Garden Software summer of 2016</p>
                             <ul>
                                 <li>Spent a summer working part for Ed Gavin, rebuilding his company's site <a target="_blank" href="http://www.rosegardensoftware.com/test/">RoseGardenSoftware.com</a>
                                 </li>
@@ -37,9 +36,9 @@ export default class Skills extends React.Component {
                                     put there)</li>
                             </ul>
                         </div>
-                        <div id="peery" class="exprience-section">
-                            <img src="/images/peery.svg"/>
-                            <p class="labeler">Taught Piano with the Peery Piano Academy for 4 years</p>
+                        <div id="peery" className="exprience-section">
+                            <img src="/images/peery.svg" />
+                            <p className="labeler">Taught Piano with the Peery Piano Academy for 4 years</p>
                             <ul>
                                 <li>Enrolled in the <a target="_blank" href="https://www.peeryacademy.com/">Peery Piano Academy</a> until I was skilled enough to become a teacher for the academy
                                     <ul>
@@ -51,7 +50,7 @@ export default class Skills extends React.Component {
                             </ul>
                         </div>
                     </div>
-                    <RainbowButton text="View My Resume"/>
+                    <RainbowButton text="View My Resume" />
                 </div>
             </section>
         )

@@ -1,9 +1,7 @@
 import React from 'react';
-import '../styles/rainbowButton.css';
 
 export default class RainbowButton extends React.Component {
     componentDidMount() {
-        let animationFrame = undefined;
         let angle = 0;
         let p = document.getElementById('rainbowy');
         let text = p.innerHTML.split('');
@@ -22,15 +20,15 @@ export default class RainbowButton extends React.Component {
                 spans[i].style.color = 'hsl(' + (angle + Math.floor(i * phaseJump)) + ', 100%, 70%)';
             }
             angle++;
-            animationFrame = requestAnimationFrame(change);
+            requestAnimationFrame(change);
         })();
     }
 
     render() {
         return (
-            <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <div className="col-md-8 col-md-offset-2 col-xs-12">
                 <div id="cool-button">
-                    <h3 id="rainbowy" class="unselectable">{this.props.text}</h3>
+                    <h3 id="rainbowy" className="unselectable">{this.props.text}</h3>
                 </div>
             </div>
         )
