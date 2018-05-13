@@ -1,62 +1,3 @@
-#about {
-  background-color: #17A697;
-  color: white; }
-  #about h1, #about h2, #about h3, #about h4 {
-    text-align: center; }
-  #about .about-text {
-    text-align: center;
-    font-size: 24px;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    margin-bottom: 0; }
-  #about .first-about {
-    padding-top: 0;
-    padding-bottom: 20px; }
-  #about .full-screen.background-image {
-    height: calc(100vh - 84px); }
-    #about .full-screen.background-image .background-cover {
-      height: calc(100vh - 84px); }
-      #about .full-screen.background-image .background-cover h3 {
-        line-height: 100%;
-        height: 100%;
-        color: rgba(255, 255, 255, 0); }
-  #about .pushed-down::before {
-    display: block;
-    position: absolute;
-    content: '';
-    bottom: 30px;
-    width: 100px;
-    height: 2px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background: #fff;
-    box-shadow: 0 10px 0 #fff; }
-  #about svg#bigTriangleColor {
-    pointer-events: none; }
-  #about #bigTriangleColor path {
-    fill: #ffffff; }
-  #about #geisal {
-    background-image: url("/images/about/geisal.jpg"); }
-  #about #lax {
-    background-image: url("/images/about/lax.jpg");
-    background-position: center top; }
-  #about #freinds {
-    background-image: url("/images/about/suit_not_dab.jpg");
-    background-position: center top; }
-  #about div[class=background-cover]:hover {
-    opacity: 1; }
-  #about .background-cover {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.07);
-    opacity: 0; }
-  #about .background-image .background-cover h3 {
-    font-size: 30px;
-    line-height: 400px;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0; }
-
 .header {
   width: 100%; }
   .header #main-logo {
@@ -231,7 +172,9 @@
     border: 8px solid #FF5629; }
   #home h1 {
     font-size: 70px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 56px; }
   #home h2::before {
     display: block;
     position: absolute;
@@ -251,24 +194,6 @@
   @media screen and (max-width: 480px) {
     #home h1 {
       font-size: 42px; } }
-
-#cool-button {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border-radius: 5px;
-  background-color: #333333;
-  -webkit-transition: background-color .3s ease-out;
-  -moz-transition: background-color .3s ease-out;
-  -o-transition: background-color .3s ease-out;
-  transition: background-color .3s ease-out; }
-  #cool-button:hover {
-    background-color: black !important; }
-  #cool-button h3 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: 'Bungee Shade', cursive !important;
-    color: black;
-    font-size: 3em; }
 
 #skills {
   background-color: #ffffff;
@@ -337,6 +262,137 @@
     padding-top: 15px;
     padding-bottom: 15px; }
 
+#cool-button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: #333333;
+  -webkit-transition: background-color .3s ease-out;
+  -moz-transition: background-color .3s ease-out;
+  -o-transition: background-color .3s ease-out;
+  transition: background-color .3s ease-out; }
+  #cool-button:hover {
+    background-color: black !important; }
+  #cool-button h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Bungee Shade', cursive !important;
+    color: black;
+    font-size: 3em; }
+
+#about {
+  background-color: #17A697;
+  color: white; }
+  #about h1, #about h2, #about h3, #about h4 {
+    text-align: center; }
+  #about h1 {
+    font-size: 36px; }
+  #about .about-text {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-bottom: 0; }
+  #about .first-about {
+    padding-top: 0;
+    padding-bottom: 20px; }
+  #about .full-screen.background-image {
+    height: calc(100vh - 84px); }
+    #about .full-screen.background-image .background-cover {
+      height: calc(100vh - 84px); }
+      #about .full-screen.background-image .background-cover h3 {
+        line-height: 100%;
+        height: 100%;
+        color: rgba(255, 255, 255, 0); }
+  #about .pushed-down::before {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 30px;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: 0 10px 0 #fff; }
+  #about svg#bigTriangleColor {
+    pointer-events: none; }
+  #about #bigTriangleColor path {
+    fill: #ffffff; }
+  #about #geisal {
+    background-image: url("/images/about/geisal.jpg"); }
+  #about #lax {
+    background-image: url("/images/about/lax.jpg");
+    background-position: center top; }
+  #about #freinds {
+    background-image: url("/images/about/suit_not_dab.jpg");
+    background-position: center top; }
+  #about div[class=background-cover]:hover {
+    opacity: 1; }
+  #about .background-cover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    opacity: 0; }
+  #about .background-image .background-cover h3 {
+    font-size: 30px;
+    line-height: 400px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0; }
+
+.contact {
+  background-color: #373F51;
+  color: white; }
+  .contact .outerContact {
+    float: left;
+    width: 25%;
+    text-align: center; }
+  .contact .contact-icon {
+    width: 50%;
+    height: 50%; }
+  .contact h1 {
+    text-align: center; }
+  .contact path {
+    fill: #1ed9c3;
+    -webkit-transition: fill .3s;
+    -moz-transition: fill .3s;
+    -o-transition: fill .3s;
+    transition: fill .3s; }
+  .contact .contact-icon:hover path {
+    fill: #17A697; }
+  .contact #button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: #1ed9c3;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
+    color: white; }
+    .contact #button:hover {
+      background-color: #17A697; }
+    .contact #button h3 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-family: 'BioRhyme', serif !important;
+      font-size: 50px; }
+  .contact .logos-container {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .contact label {
+    float: left;
+    font-size: 20px; }
+
+.foot-bar {
+  width: 100%;
+  background-color: #fff;
+  color: #111;
+  z-index: 1; }
+  .foot-bar a {
+    color: #111; }
+
 body {
   margin: 0;
   padding: 0;
@@ -350,9 +406,6 @@ body {
     background-image: url("/images/tubing.jpg"); }
   body .centered {
     text-align: center; }
-  body h1 {
-    font-weight: 900;
-    font-size: 56px; }
   body .background-image {
     background-size: cover;
     background-attachment: fixed;

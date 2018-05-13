@@ -4,6 +4,8 @@ import Header from './components/header.jsx'
 import Home from './components/home.jsx'
 import Skills from './components/skills.jsx'
 import About from './components/about.jsx'
+import Contact from './components/contact.jsx'
+import Footer from './components/footer.jsx'
 
 class App extends Component {
   render() {
@@ -15,6 +17,8 @@ class App extends Component {
         <section className="background-image" id="tubing">&nbsp;</section>
         <Skills />
         <About />
+        <Contact />
+        <Footer />
 
       </div>
     );

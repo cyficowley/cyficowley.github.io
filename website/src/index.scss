@@ -1,4 +1,10 @@
-@import "styles/*";
+@import "styles/header";
+@import "styles/home";
+@import "styles/skills";
+@import "styles/rainbowButton";
+@import "styles/about";
+@import "styles/contact";
+@import "styles/footer";
 
 body {
     margin: 0;
@@ -18,12 +24,6 @@ body {
     .centered{
         text-align: center;
     }
-
-    h1 {
-        font-weight: 900;
-        font-size: 56px;
-    }
-
     .background-image {
         background-size: cover;
         background-attachment: fixed;
