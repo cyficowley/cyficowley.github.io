@@ -2,6 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cyficowley.github.io/website_rewrite_666",
   "dependencies": {
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
