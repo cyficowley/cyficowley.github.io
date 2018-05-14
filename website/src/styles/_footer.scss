@@ -1,0 +1,11 @@
+@import "colors";
+
+.foot-bar{
+    width: 100%;
+    background-color:$header;
+    color:$header-text;
+    z-index: 1;
+    a{
+        color:$header-text;
+    }
+}

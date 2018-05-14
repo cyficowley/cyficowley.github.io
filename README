@@ -1,0 +1,5 @@
+this is the latest rewrite of website in REACT this time
+
+yarn deploy
+
+`rm -rf node_modules/gh-pages/.cache` if crap don't work for deploying
