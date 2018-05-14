@@ -75,7 +75,7 @@
         width: 100%;
         color: var(--header-text); }
   @media screen and (max-width: 767px) {
-    .header .nav_bar ul li a {
+    .header .nav-bar ul li a {
       display: none;
       padding-right: 25px;
       padding-left: 25px; }
