@@ -4,14 +4,14 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <section className="contact">
+            <section id="contact" className="contact">
                 <div className="container">
                     <div className="col-xs-12">
                         <h1>Get In Touch</h1>
                     </div>
                     <div className="col-md-8 col-md-offset-2 col-xs-12 logos-container">
                         <div className="outerContact">
-                            <a target="_blank" href="https://www.facebook.com/cyrus.cowley"><svg className="contact-icon" viewBox="0 0 24 24" onClick>
+                            <a target="_blank" href="https://www.facebook.com/cyrus.cowley"><svg className="contact-icon" viewBox="0 0 24 24">
                                 <path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" />
                             </svg></a>
                         </div>
@@ -34,16 +34,16 @@ export default class Header extends React.Component {
                     <div className="col-md-8 col-md-offset-2 col-xs-12">
                         <form action="/send-mail/" id="contact-form" method="post">
                             <div className="form-group">
-                                <label for="name">Name</label>
-                                <input className="form-control" id="name" name="name" required placeholder="Cyrus Cowley" maxlength="50" />
+                                <label htmlFor="name">Name</label>
+                                <input className="form-control" id="name" name="name" required placeholder="Cyrus Cowley" maxLength="50" />
                             </div>
                             <div className="form-group">
-                                <label for="email">Email</label>
-                                <input className="form-control" id="email" name="email" type="email" required placeholder="email@domain.com" maxlength="50" />
+                                <label htmlFor="email">Email</label>
+                                <input className="form-control" id="email" name="email" type="email" required placeholder="email@domain.com" maxLength="50" />
                             </div>
                             <div className="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea className="form-control" id="message" name="message" rows="3" required placeholder="Texty texty text" maxlength="750"></textarea>
+                                <label htmlFor="message">Your Message</label>
+                                <textarea className="form-control" id="message" name="message" rows="3" required placeholder="Texty texty text" maxLength="750"></textarea>
                             </div>
                             <div className="col-md-8 col-md-offset-2 col-xs-12">
                                 <div id="button">

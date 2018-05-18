@@ -1,6 +1,12 @@
 import React from 'react';
 
 export default class RainbowButton extends React.Component {
+    constructor(props) {
+        super(props);
+        this.goToResume = this.goToResume.bind(this);
+    }
+
+
     componentDidMount() {
         let angle = 0;
         let p = document.getElementById('rainbowy');
@@ -24,11 +30,18 @@ export default class RainbowButton extends React.Component {
         })();
     }
 
+    goToResume() {
+        var win = window.open("https://docs.google.com/document/d/1IZiAUkQdxRdKNOz5MkYJrdOlpUGjD3BeFINsQIVn3v4/export?format=pdf", '_blank');
+        win.focus();
+    }
+
     render() {
         return (
             <div className="col-md-8 col-md-offset-2 col-xs-12">
                 <div id="cool-button">
-                    <h3 id="rainbowy" className="unselectable">{this.props.text}</h3>
+                    {/* <a id="rainbow-button-link" className="noselect" target="_blank" href="https://docs.google.com/document/d/1IZiAUkQdxRdKNOz5MkYJrdOlpUGjD3BeFINsQIVn3v4/export?format=pdf"> */}
+                    <h3 id="rainbowy" onClick={this.goToResume} className="unselectable noselect">{this.props.text}</h3>
+                    {/* </a> */}
                 </div>
             </div>
         )
