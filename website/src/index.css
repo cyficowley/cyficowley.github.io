@@ -245,10 +245,12 @@
           font-size: 28px; } }
   #skills #Malwarebytes img {
     width: 320px; }
-  #skills #rose img {
+  #skills #seds img {
     width: 160px; }
-  #skills #peery img {
-    width: 320px; }
+  #skills #synesthetic img {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: 130px; }
   #skills hr {
     margin-right: 20%;
     margin-left: 20%;

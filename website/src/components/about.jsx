@@ -20,9 +20,9 @@ export default class Header extends React.Component {
                 </div>
                 <EachSection pTag={
                     <p className="about-text first-about">
-                        I am currently a Freshman in<br />
+                        I am currently a Sophomore in<br />
                         Warren College at UC San Diego<br />
-                        studying Computer Engineering<br /><br />
+                        studying Computer Science<br /><br />
                     </p>}
                     image="geisal"
 
@@ -32,9 +32,9 @@ export default class Header extends React.Component {
                 <EachSection pTag={
                     <p className="about-text">
                         I've made a lot of great friends<br />
-                        over the last 4 years<br /><br />
-                        They made high school not only<br />
-                        bearable, but even fun<br />
+                        and found a lot of great projects<br /><br />
+                        So far I've really enjoyed my time at UCSD<br />
+                        and hope to continue doing cool things<br />
                     </p>}
                     image="freinds"
 
@@ -43,10 +43,10 @@ export default class Header extends React.Component {
 
                 <EachSection pTag={
                     <p className="about-text">
-                        I love sports and played lacrosse<br />
-                        through all of High School<br /><br />
-                        I was team captain senior year and<br />
-                        received the First Team All League award<br />
+                        I hate writing things like this<br />
+                        so so so so much<br /><br />
+                        So I'm just hoping by this point <br />
+                        you've stopped reading entirely<br />
                     </p>}
                     image="lax"
 

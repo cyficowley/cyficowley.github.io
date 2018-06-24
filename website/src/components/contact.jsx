@@ -32,14 +32,14 @@ export default class Header extends React.Component {
                         </div>
                     </div>
                     <div className="col-md-8 col-md-offset-2 col-xs-12">
-                        <form action="/send-mail/" id="contact-form" method="post">
+                        <form action="https://formspree.io/cyficowley@gmail.com" id="contact-form" method="post">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
                                 <input className="form-control" id="name" name="name" required placeholder="Cyrus Cowley" maxLength="50" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
-                                <input className="form-control" id="email" name="email" type="email" required placeholder="email@domain.com" maxLength="50" />
+                                <input className="form-control" id="email" name="_replyto" type="email" required placeholder="email@domain.com" maxLength="50" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Your Message</label>

@@ -25,28 +25,22 @@ export default class Skills extends React.Component {
                                 </li>
                             </ul>
                         </div>
-                        <div id="rose" className="exprience-section">
-                            <img src="/images/rosegs.png" />
-                            <p className="labeler">Developed WordPress site for Rose Garden Software summer of 2016</p>
+                        <div id="seds" className="exprience-section">
+                            <img src="/images/seds.png" />
+                            <p className="labeler">Software Engineer at UCSD SEDS</p>
                             <ul>
-                                <li>Spent a summer working part for Ed Gavin, rebuilding his company's site <a target="_blank" href="http://www.rosegardensoftware.com/test/">RoseGardenSoftware.com</a>
-                                </li>
-                                <li>Built site on WordPress, story boarding then customizing it to his specifications</li>
-                                <li>(He has yet to complete the content on the site so some sections are still filled with the defaults I
-                                    put there)</li>
+                                <li>I am part of the 30 person student team designing and constructing a NASA sponsored, 3000 lbs thrust-capable $300k rocket engine test trailer</li>
+                                <li>I am the principal software engineer for extraction, real time visualization and post analysis of data from the test stand</li>
+                                <li>The main tools I used were React, WebSockets, Node.js, Flask and NumPy</li>
                             </ul>
                         </div>
-                        <div id="peery" className="exprience-section">
-                            <img src="/images/peery.svg" />
-                            <p className="labeler">Taught Piano with the Peery Piano Academy for 4 years</p>
+                        <div id="synesthetic" className="exprience-section">
+                            <img src="/images/synesthetic.png" />
+                            <p className="labeler">Software Engineer at Synesthetic Solutions</p>
                             <ul>
-                                <li>Enrolled in the <a target="_blank" href="https://www.peeryacademy.com/">Peery Piano Academy</a> until I was skilled enough to become a teacher for the academy
-                                    <ul>
-                                        <li>Taught students aged five to fifteen classical piano with weekly lessons</li>
-                                        <li>The students learned in a group setting with an average of four students in a lesson</li>
-                                        <li>Worked with the students both all at once and one on one</li>
-                                    </ul>
-                                </li>
+                                <li>I am a software engineer in a 5 person startup to prototype and design a cane for the visually impaired using stereo cameras and machine vision to give the user much more information about their environment than ususally accessible</li>
+                                <li>The current development we are doing is mainly in Python and openCV</li>
+                                <li>The project is funded and backed by the UCSD Basement, an on campus incubator</li>
                             </ul>
                         </div>
                     </div>
