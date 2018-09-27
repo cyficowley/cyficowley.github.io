@@ -40,15 +40,15 @@ export default class Header extends React.Component {
 
                 />
 
-
+                
                 <EachSection pTag={
                     <p className="about-text">
-                        I hate writing things like this<br />
-                        so so so so much<br /><br />
-                        So I'm just hoping by this point <br />
-                        you've stopped reading entirely<br />
+                        Here's some more text<br />
+                        I just want to show another image<br /><br />
+                        I love the coding part of website<br />
+                        but the words are so hard<br />
                     </p>}
-                    image="lax"
+                    image="surfin"
 
                 />
             </section>

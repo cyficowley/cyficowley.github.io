@@ -325,11 +325,11 @@
     fill: #ffffff; }
   #about #geisal {
     background-image: url("/images/about/geisal.jpg"); }
-  #about #lax {
-    background-image: url("/images/about/lax.jpg");
-    background-position: center top; }
   #about #freinds {
     background-image: url("/images/about/suit_not_dab.jpg");
+    background-position: center top; }
+  #about #surfin {
+    background-image: url("/images/about/surfin.jpg");
     background-position: center top; }
   #about div[class=background-cover]:hover {
     opacity: 1; }
