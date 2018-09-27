@@ -243,6 +243,8 @@
       @media screen and (max-width: 480px) {
         #skills #im-bored h2 {
           font-size: 28px; } }
+  #skills #Alta img {
+    padding: 15px; }
   #skills #Malwarebytes img {
     width: 320px; }
   #skills #seds img {
