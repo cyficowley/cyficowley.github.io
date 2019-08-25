@@ -45,7 +45,7 @@ export default class Header extends React.Component {
                                 <label htmlFor="message">Your Message</label>
                                 <textarea className="form-control" id="message" name="message" rows="3" required placeholder="Texty texty text" maxLength="750"></textarea>
                             </div>
-                            <div className="col-md-8 col-md-offset-2 col-xs-12">
+                            <div className="col-md-8 col-md-offset-2 col-xs-12" onClick={() => document.getElementById("contact-form").submit()}>
                                 <div id="button">
                                     <h3 className="unselectable">SUBMIT</h3>
                                 </div>

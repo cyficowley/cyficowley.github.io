@@ -19,6 +19,15 @@
         padding-bottom: 75px;
         margin-bottom: 0;
     }
+
+    .links a{
+        color:white;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
     .first-about{
         padding-top: 0;
         padding-bottom: 20px;

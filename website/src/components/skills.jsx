@@ -11,6 +11,23 @@ export default class Skills extends React.Component {
                     <div className="col-md-8 col-md-offset-2 col-xs-12 centered">
                         <h2>My Work Experience</h2>
                         <hr />
+                        <div id="Intuit" className="exprience-section">
+                            <img src="/images/intuit.png" />
+                            <p className="labeler">Software Engineering Intern</p>
+                            <ul>
+                                <li>Designed, wrote and brought to production a Slack bot supporting the talent acquisition team of 200 people</li>
+                                <li>Used a new fully serverless architecture that was over 20x cheaper to run for smaller use cases</li>
+                            </ul>
+                        </div>
+                        <div id="Yonder" className="exprience-section">
+                            <img src="/images/Yonder.svg" />
+                            <p className="labeler">Software Lead</p>
+                            <ul>
+                                <li>Co-Lead a team of 15 other SWE students building a rover for the Mars Society's University Rover Challenge</li>
+                                <li>The rover we build competes in a variety of different challenges that we have to design software for such asautonomous exploration, analyzing soil for life, and extreme retrieval tasks</li>
+                                <li>I also wrote our super awesome website which is right <a target="_blank" href="https://yonderdynamics.org">here</a></li>
+                            </ul>
+                        </div>
                         <div id="Alta" className="exprience-section">
                             <img src="/images/alta-devices.png" />
                             <p className="labeler">Image processing and Software Engineering intern</p>
@@ -27,29 +44,6 @@ export default class Skills extends React.Component {
                                 <li>I am a software engineer and Co-Owner in a startup to prototype and design a cane for the visually impaired using stereo cameras and machine vision to give the user much more information about their environment than ususally accessible</li>
                                 <li>The current development we are doing is mainly in Python and openCV</li>
                                 <li>The project is funded and backed by the UCSD Basement, an on campus incubator</li>
-                            </ul>
-                        </div>
-                        <div id="seds" className="exprience-section">
-                            <img src="/images/seds.png" />
-                            <p className="labeler">Software Engineer at UCSD SEDS</p>
-                            <ul>
-                                <li>I am part of the 30 person student team designing and constructing a NASA sponsored, 3000 lbs thrust-capable $300k rocket engine test trailer</li>
-                                <li>I am the principal software engineer for extraction, real time visualization and post analysis of data from the test stand</li>
-                                <li>The main tools I used were React, WebSockets, Node.js, Flask and NumPy</li>
-                            </ul>
-                        </div>
-                        <div id="Malwarebytes" className="exprience-section">
-                            <img src="/images/Malwarebytes.png" />
-                            <p className="labeler">Intern in quality assurance over the summer of 2017</p>
-                            <ul>
-                                <li>Worked in testing internal sales systems using salesforce for 2 months</li>
-                                <li>Was the sole QA person for the <a target="_blank" href="https://www.malwarebytes.com">Malwarebytes website</a> for 2 months
-                                    <ul>
-                                        <li>I tested and validated every change to the website (which gets around 10 million visits every
-                                            month)</li>
-                                        <li>By the end of my internship I was developing new features and pushing out bug fixes to the site</li>
-                                    </ul>
-                                </li>
                             </ul>
                         </div>
                     </div>

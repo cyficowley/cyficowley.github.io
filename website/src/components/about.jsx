@@ -20,7 +20,7 @@ export default class Header extends React.Component {
                 </div>
                 <EachSection pTag={
                     <p className="about-text first-about">
-                        I am currently a Sophomore in<br />
+                        I am currently a Junior in<br />
                         Warren College at UC San Diego<br />
                         studying Computer Science<br /><br />
                     </p>}
@@ -42,11 +42,13 @@ export default class Header extends React.Component {
 
                 
                 <EachSection pTag={
-                    <p className="about-text">
-                        Here's some more text<br />
-                        I just want to show another image<br /><br />
-                        I love the coding part of website<br />
-                        but the words are so hard<br />
+                    <p className="about-text links">
+                        Here's some of the cool things:<br />
+                        <a href="https://vimeo.com/307802003" target="_blank">literally the best music video ever made</a><br />
+                        <a href="https://www.youtube.com/watch?v=iq98nd9kX_c" target="_blank">meme</a><br />
+                        <a href="https://www.youtube.com/watch?v=stTeR3MyQ98" target="_blank">another meme</a><br />
+                        <a href="https://github.com/cyficowley/2404_faces" target="_blank">A cool project I coded</a><br />
+                        <a href="https://photos.app.goo.gl/pUyxmwxFCvowsSuD9" target="_blank">A lot of pictures im too lazy to upload to here</a><br />
                     </p>}
                     image="surfin"
 
