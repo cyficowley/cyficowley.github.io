@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/images/logo.png" />
+    <link href="/bootstrap.min.css" rel="stylesheet" />
+    <title>Cyrus Cowley's website</title>
+    <link href="/static/css/main.2bbd083a.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 style="font-family: 'Fira Sans', serif; font-weight: 500; font-size: 40px">
+      The Garage is currently <span id="garage-state" style="font-weight:bold">Loading</span>.  Last updated <span id="since" style="font-weight:bold">Loading</span>
+    </h1>
+    
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+      import { getFirestore, doc, getDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCOx_moi3wovKYP6jfLXH4-9xd2cmGXGBQ",
+        authDomain: "garage-a339b.firebaseapp.com",
+        projectId: "garage-a339b",
+        storageBucket: "garage-a339b.firebasestorage.app",
+        messagingSenderId: "354689436095",
+        appId: "1:354689436095:web:7019e3f44c82f19e1bb90a"
+      };
+
+      // Initialize Firebase
+      const application = initializeApp(firebaseConfig);
+      const db = getFirestore(application);
+      var currentTimestamp;
+
+      function getTimeSince() {
+        if(currentTimestamp== null){
+          return "LOADING";
+        }
+        const now = new Date();
+        const past = new Date(currentTimestamp);
+        const diffMs = now - past + 1000;
+        
+        const seconds = Math.floor(diffMs / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+        const months = Math.floor(days / 30);
+        const years = Math.floor(months / 12);
+
+        if (years > 0) return `${years} year${years > 1 ? 's' : ''} ago`;
+        if (months > 0) return `${months} month${months > 1 ? 's' : ''} ago`;
+        if (days > 0) return `${days} day${days > 1 ? 's' : ''} ago`;
+        if (hours > 0) return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+        if (minutes > 0) return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+        return `${seconds} second${seconds !== 1 ? 's' : ''} ago`;
+      }
+
+      // Function to fetch and update the garage state
+
+      async function subGarageState() {
+        const garageStateElement = document.getElementById("garage-state");
+        try {
+          // Reference to the document containing garage state
+          const docRef = doc(db, "garage", "garage");
+
+          
+          
+          
+          onSnapshot(docRef, (docSnap) => {
+            if (docSnap.exists()) {
+              // Update the text with the state value
+              const data = docSnap.data();
+              const state = data.open; // Assuming "state" is a field in the document
+              if(state === false){
+                garageStateElement.textContent = "CLOSED";
+              }
+              else{
+                garageStateElement.textContent = "OPEN";
+              }
+              currentTimestamp = data.timestamp * 1000;
+            } else {
+              garageStateElement.textContent = "Document not found!";
+            }
+          }, (error) => {
+            console.error('Error listening to document updates:', error);
+          });
+
+        } catch (error) {
+          console.error("Error fetching garage state:", error);
+          garageStateElement.textContent = "Error fetching data!";
+        }
+      }
+
+      function updateTime() {
+        const timeSinceEl = document.getElementById("since");
+        timeSinceEl.textContent = getTimeSince();
+      }
+      setInterval(updateTime, 100);
+
+      // Call the function to fetch and update the state
+      subGarageState();
+    </script>
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Bungee Shade:400,700", "BioRhyme:400,700", "Rubik:700,900", "Fira Sans:300"],
+      },
+    });
+  </script>
+</html>
